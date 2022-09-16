@@ -1,0 +1,5 @@
+pika
+flask
+flask-cors
+pymongo
+pyscopg2
