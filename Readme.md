@@ -46,5 +46,6 @@ python consumer.py
 ```
 
 ## Start client
-In directory front, initialize server in index.html
+In directory front, initialize server in index.html.
+Add product here
 ![Diagram](https://raw.githubusercontent.com/Larrygf02/cqrs-pattern-python/master/client.png)
