@@ -44,3 +44,7 @@ In directory sync-data/consumer
 ```
 python consumer.py
 ```
+
+## Start client
+In directory front, initialize server in index.html
+![Diagram](https://raw.githubusercontent.com/Larrygf02/cqrs-pattern-python/master/client.png)
