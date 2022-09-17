@@ -1,10 +1,11 @@
 # Implement CQRS pattern with python
 
 ## Architecture
-
+![Diagram](https://raw.githubusercontent.com/Larrygf02/cqrs-pattern-python/master/CQRS.pattern.drawio.png)
 
 ## Init DB postgres
 ```
+create database sync-demo
 create table products (
     id serial primary key,
     name varchar(50),
@@ -12,6 +13,10 @@ create table products (
     precio numeric(5,1)
 )
 ```
+
+## Init mongodb (studio3T)
+
+create database sync-demo
 
 ## Start rabbitmq
 ```
