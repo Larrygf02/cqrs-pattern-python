@@ -11,7 +11,7 @@
     <div class="p-3 w-100" id="app">
         <h2 class="text-center">Formulario Producto</h2>
         <div class="d-flex justify-content-center p-3">
-            <form class="w-50" @submit.prevent="addProduct">
+            <form class="w-50" @submit.prevent="formSubmit">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" class="form-control" id="name" v-model="name">

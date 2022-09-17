@@ -7,15 +7,30 @@ const app = Vue.createApp({
         }
     },
     methods: {
+        async formSubmit() {
+            const id = await this.addProduct()
+            console.log(id)
+            this.produceMessage(id)
+            this.clearForm()
+        },
         async addProduct() {
-            const { response } = await axios.post('http://127.0.0.1:5000/insert', {
+            const { data } = await axios.post('http://127.0.0.1:5000/insert', {
                 name: this.name,
                 cantidad: this.cantidad,
                 precio: this.precio
             })
-            console.log(response)
+            const { response } = data;
             const { id } = response;
-            console.log(id)
+            return id;
+        },
+        async produceMessage(id) {
+            const { data } = await axios.post('http://127.0.0.1:5000/produce', {
+                id_sync: id,
+                name: this.name,
+                cantidad: this.cantidad,
+                precio: this.precio
+            })
+            console.log(data)
         },
         clearForm() {
             this.name = ''
