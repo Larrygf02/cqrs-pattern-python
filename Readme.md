@@ -16,7 +16,9 @@ create table products (
 
 ## Init mongodb (studio3T)
 
+```
 create database sync-demo
+```
 
 ## Start rabbitmq
 ```
